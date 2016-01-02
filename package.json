@@ -1,0 +1,17 @@
+{
+  "name": "justopensourced",
+  "version": "1.0.0",
+  "description": "Tweets whenever someone opens their first open source pull request on GitHub",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Nesbitt",
+  "license": "MIT",
+  "dependencies": {
+    "eventsource": "^0.1.6",
+    "request": "^2.67.0",
+    "twitter": "^1.2.5"
+  }
+}
