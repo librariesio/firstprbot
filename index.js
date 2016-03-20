@@ -30,7 +30,7 @@ es.on('event', function(e) {
           json = JSON.parse(body)
           console.log(login + ': ' + json.total_count)
           if(json.total_count < 2) {
-            var status = data.actor.login + " just opened their first open source pull request " + data.payload.pull_request.html_url
+            var status = data.actor.login + " just sent their first open source pull request " + data.payload.pull_request.html_url
             client.post('statuses/update', {status: status}, function(error, tweet, response){
               if (!error) {
                 console.log(tweet);
