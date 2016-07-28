@@ -1,5 +1,5 @@
 {
-  "name": "justopensourced",
+  "name": "firstprbot",
   "version": "1.0.0",
   "description": "Tweets whenever someone opens their first open source pull request on GitHub",
   "main": "index.js",
