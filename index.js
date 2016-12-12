@@ -16,7 +16,7 @@ es.on('event', function(e) {
   if(data.type === 'PullRequestEvent'){
     if(data.payload.action === 'opened'){
       var login = data.actor.login
-      var searchURL = 'https://api.github.com/search/issues?q=type:pr+author:"'+login+'"&sort=created&order=asc&per_page=1&access_token='+process.env.GITHUB_TOKEN
+      var searchURL = 'https://api.github.com/search/issues?q=type:pr+author:"'+login+'"+-user:"'+login+'"&sort=created&order=asc&per_page=1&access_token='+process.env.GITHUB_TOKEN
 
       var options = {
         url: searchURL,
